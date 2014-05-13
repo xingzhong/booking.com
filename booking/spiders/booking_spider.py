@@ -7,8 +7,8 @@ class BookingSpider(BaseSpider):
     name = "Booking"
     allowed_domains = ["booking.com"]
     start_urls = map(lambda o:
-    	"http://www.booking.com/searchresults.html?city=-1456928;offset=%s;rows=20"%o, 
-    	range(0,1000,20))
+    	"http://www.booking.com/searchresults.html?city=-1456928;offset=%s;rows=20"%o,
+    	range(0,1900,20))
 
     def parse(self, response):
         sel = HtmlXPathSelector(response)
