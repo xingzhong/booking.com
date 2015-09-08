@@ -10,3 +10,12 @@ class BookingItem(Item):
     name = Field()
     score = Field()
     num = Field()
+
+class BookingRooms(Item):
+    region = Field()
+    country = Field()
+    city = Field()
+    hotel = Field()
+    raw = Field()
+    numRoom = Field()
+    link = Field()
